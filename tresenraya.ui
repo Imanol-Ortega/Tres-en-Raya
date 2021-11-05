@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TresEnRaya</class>
+ <widget class="QMainWindow" name="TresEnRaya">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TresEnRaya</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>86</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Puntaje</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="jugador1">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>O</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="jugador2">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Empates</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="empate">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="Reiniciar"/>
+    <addaction name="Salir"/>
+   </widget>
+   <widget class="QMenu" name="menuOpciones">
+    <property name="title">
+     <string>Opciones</string>
+    </property>
+    <widget class="QMenu" name="menuColor">
+     <property name="title">
+      <string>Color</string>
+     </property>
+     <addaction name="Color_X"/>
+     <addaction name="Color_O"/>
+    </widget>
+    <widget class="QMenu" name="menuElegir">
+     <property name="title">
+      <string>Elegir</string>
+     </property>
+     <addaction name="X"/>
+     <addaction name="O"/>
+    </widget>
+    <addaction name="menuColor"/>
+    <addaction name="menuElegir"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuOpciones"/>
+  </widget>
+  <action name="Reiniciar">
+   <property name="text">
+    <string>Reiniciar</string>
+   </property>
+  </action>
+  <action name="Salir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="Musica">
+   <property name="text">
+    <string>Elegir Musica</string>
+   </property>
+  </action>
+  <action name="Color_X">
+   <property name="text">
+    <string>Color X</string>
+   </property>
+  </action>
+  <action name="Color_O">
+   <property name="text">
+    <string>Color O</string>
+   </property>
+  </action>
+  <action name="X">
+   <property name="text">
+    <string>X</string>
+   </property>
+  </action>
+  <action name="O">
+   <property name="text">
+    <string>O</string>
+   </property>
+  </action>
+  <action name="contra">
+   <property name="text">
+    <string>1 VS 1</string>
+   </property>
+  </action>
+  <action name="actionF_cil">
+   <property name="text">
+    <string>Fácil</string>
+   </property>
+  </action>
+  <action name="actionNormal">
+   <property name="text">
+    <string>Normal</string>
+   </property>
+  </action>
+  <action name="actionM_quina">
+   <property name="text">
+    <string>Máquina</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
